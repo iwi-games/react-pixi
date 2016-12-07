@@ -27,9 +27,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PIXI from 'pixi.js';
 
-import ReactMultiChild from 'react/lib/ReactMultiChild';
+import ReactMultiChild from 'react-dom/lib/ReactMultiChild';
 import ReactElement from 'react/lib/ReactElement';
-import ReactUpdates from 'react/lib/ReactUpdates';
+import ReactUpdates from 'react-dom/lib/ReactUpdates';
 
 import assign from 'object-assign';
 import emptyObject from 'fbjs/lib/emptyObject';
@@ -557,6 +557,27 @@ var DisplayObjectContainer = createPIXIComponent(
 });
 
 //
+// Graphics
+//
+
+var Graphics = createPIXIComponent(
+  'Graphics',
+  DisplayObjectContainerMixin,
+  CommonDisplayObjectContainerImplementation, {
+
+  createDisplayObject : function() {
+  	return new PIXI.Graphics();
+  },
+
+  applySpecificDisplayObjectProps: function (oldProps, newProps) {
+    this.transferDisplayObjectPropsByName(oldProps, newProps, {
+      'width': undefined,
+      'height': undefined
+    });
+  }
+});
+
+//
 // Sprite
 //
 
@@ -813,7 +834,8 @@ var PIXIComponents = {
   Sprite : Sprite,
   Text : Text,
   BitmapText : BitmapText,
-  TilingSprite : TilingSprite
+  TilingSprite : TilingSprite,
+  Graphics : Graphics
 };
 
 var PIXIFactories = {};

@@ -1,6 +1,6 @@
 {
   "name": "react-pixi",
-  "version": "0.9.1",
+  "version": "0.10.1",
   "description": "Construct PIXI.js scenes using React",
   "keywords": [
     "react",
@@ -24,7 +24,7 @@
     "src"
   ],
   "publishConfig": {
-    "registry": "https://nexus.gamesys.co.uk/content/repositories/npm-hosted/"
+    "registry": "https://gamesys.artifactoryonline.com/gamesys/api/npm/npm-virtual/"
   },
   "main": "es5/react-pixi-commonjs.js",
   "dependencies": {
@@ -35,8 +35,8 @@
   },
   "peerDependencies": {
     "pixi.js": "4.2.3",
-    "react": "15.3.2",
-    "react-dom": "15.3.2"
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -57,8 +57,8 @@
     "lodash": "^4.6.1",
     "node-static": "~0.7.3",
     "pixi.js": "4.2.3",
-    "react": "15.3.2",
-    "react-dom": "15.3.2",
+    "react": "^15.4.0",
+    "react-dom": "^15.4.0",
     "resemblejs": "~2.2.0",
     "rimraf": "~2.5.0",
     "transform-loader": "^0.2.3",
