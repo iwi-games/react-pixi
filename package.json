@@ -16,13 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Izzimach/react-pixi"
+    "url": "https://github.com/iwi-games/react-pixi"
   },
   "license": "Apache-2.0",
   "files": [
     "es5",
     "src"
   ],
+  "publishConfig": {
+    "registry": "https://nexus.gamesys.co.uk/content/repositories/npm-hosted/"
+  },
   "main": "es5/react-pixi-commonjs.js",
   "dependencies": {
     "brfs": "^1.4.1",
@@ -31,9 +34,9 @@
     "object-assign": "^4.0.1"
   },
   "peerDependencies": {
-    "pixi.js": "~4.0.0",
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1"
+    "pixi.js": "4.2.3",
+    "react": "15.3.2",
+    "react-dom": "15.3.2"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
@@ -53,9 +56,9 @@
     "karma-jasmine": "~0.3.2",
     "lodash": "^4.6.1",
     "node-static": "~0.7.3",
-    "pixi.js": "~4.0.0",
-    "react": "^15.2.1",
-    "react-dom": "^15.2.1",
+    "pixi.js": "4.2.3",
+    "react": "15.3.2",
+    "react-dom": "15.3.2",
     "resemblejs": "~2.2.0",
     "rimraf": "~2.5.0",
     "transform-loader": "^0.2.3",
